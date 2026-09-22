@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Cozy Lofi & Cybertech Room</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 3D Canvas Container -->
+  <div id="canvas-container"></div>
+
+  <!-- Minimal Discrete Audio Mute Toggle (Top Right) -->
+  <button class="minimal-audio-btn" id="audio-toggle" title="Toggle Music">
+    <span class="sound-wave" id="sound-wave">
+      <i></i><i></i><i></i><i></i>
+    </span>
+  </button>
+
+  <!-- Native Background Audio Player (Direct local song.m4a file) -->
+  <audio id="bg-audio" src="song.m4a" loop preload="auto"></audio>
+
+  <!-- Click to Enter Splash Overlay -->
+  <div class="enter-overlay" id="enter-overlay">
+    <div class="enter-card">
+      <div class="audio-icon-pulse">🎧</div>
+      <h2>COZY LOFI ROOM</h2>
+      <p>A quiet room, late at night, with the music on.</p>
+      <div class="song-notice">
+        <span class="music-icon">🎵</span>
+        <span>Music: <strong>Rakhlo Tum Chupake</strong></span>
+      </div>
+      <button class="enter-btn" id="enter-btn">ENTER ROOM</button>
+      <span class="subtext">Mouse Drag / Touchpad / Finger to look around • Scroll to zoom</span>
+    </div>
+  </div>
+
+  <!-- Three.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- YouTube IFrame API for seamless background audio -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="app.js"></script>
+</body>
+</html>
