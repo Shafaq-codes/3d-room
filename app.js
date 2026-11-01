@@ -132,7 +132,7 @@ function createTerminalTexture(type = 'code') {
       ['player.playBackground({ loop: true, volume: 0.85 });', '#e2e8f0'],
       ['window.rainOutside.start({ intensity: "gentle" });', '#60a5fa'],
       ['lamp.glowWarmth({ temp: "3000K", cozy: true });', '#fbbf24'],
-      ['console.log("Room atmosphere relaxed & peaceful.");', '#a1a1aa']
+      ['console.log("Atmosphere relaxed & peaceful.");', '#a1a1aa']
     ];
 
     let y = 58;
